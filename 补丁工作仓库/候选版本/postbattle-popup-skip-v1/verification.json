@@ -1,0 +1,15 @@
+{
+  "status": "passed; gameplay acceptance pending",
+  "baseline_sha256": "f8ced732c5d79da82492db6b55f2aab7a362b4616b8316ea884f9550d6dca90f",
+  "candidate_sha256": "6926c69a0cfc75af775ab7ed2bab9e3b0c910c88e4ed8ddbbb1b36f6ce7b9121",
+  "popup_sequence_cases": 37,
+  "non_target_context_cases": 16,
+  "native_input_equivalence_cases": 256,
+  "changed_existing_bytes": 17,
+  "change_allowlist_passed": true,
+  "native_renderer_cleanup_cases": 2,
+  "limits": [
+    "SDL keyboard state, graphical drawing, resource resolver and heap free substituted; no live hardware or gameplay.",
+    "Native dialog-renderer expiry/unlink path executed for both typing and fully displayed messages."
+  ]
+}

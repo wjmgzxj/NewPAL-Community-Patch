@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.0-preview",
+  "version": "v0.3.1-preview",
   "resources": [
     {
       "path": "Resource/np_lp_base_27_v1.png",
@@ -887,6 +887,70 @@
       "bytes": 78326,
       "kind": "modified-menu-raster",
       "production_source": "user-provided flattened menu; settings_toggle_v1.py",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_menu_2_add_v2.png",
+      "sha256": "5d1e213253dca6c914a652894ee110c1aac95b1610d3bc62bb1bd70ee4c09329",
+      "bytes": 65089,
+      "kind": "modified-gu-menu-raster",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_menu_2_craft_v2.png",
+      "sha256": "b1198edd0d369581c14c8a3880f708ef6938ad5b0e1e99f36af1376ee19de749",
+      "bytes": 64945,
+      "kind": "modified-gu-menu-raster",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_add_v2.png",
+      "sha256": "5ade44d4a9b958c1152208f14db860bc27d9d4779f3c6f3f1f7d2161dbdf829c",
+      "bytes": 79223,
+      "kind": "modified-gu-menu-raster",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_craft_v2.png",
+      "sha256": "1f9cdf05962a7fb792cb21ff6703e261e76b3b71b4e743a5a9724125fc6012f2",
+      "bytes": 79057,
+      "kind": "modified-gu-menu-raster",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_quantity_v2.png",
+      "sha256": "11520b05044b260fe35da689bef236ca361ff1379afa33405dbba0a5b8172a28",
+      "bytes": 79176,
+      "kind": "modified-gu-menu-raster",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_preview_name_v3.png",
+      "sha256": "c8c6583a5ece73ad2560ad0cec40d259707e5d830bbd419f9f72e2757b1467de",
+      "bytes": 1610,
+      "kind": "project-gu-preview-overlay",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_preview_pair_v3.png",
+      "sha256": "619df91315d6f472c3b2c6d1e2726b8a5a056279b8c1fa7d5f313abdffb47ab7",
+      "bytes": 2357,
+      "kind": "project-gu-preview-overlay",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
+      "rights_scope": "project additions only; underlying game/third-party rights excluded"
+    },
+    {
+      "path": "Resource/np_gu_preview_single_v3.png",
+      "sha256": "d9fdbbda2652130d35f3f94df7d62eb215154462948b72732fe086fae8ca471b",
+      "bytes": 1866,
+      "kind": "project-gu-preview-overlay",
+      "production_source": "user-provided flattened menus / approved compact nameplate and connectors; native frame/background not replaced",
       "rights_scope": "project additions only; underlying game/third-party rights excluded"
     }
   ],

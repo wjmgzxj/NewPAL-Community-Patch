@@ -32,11 +32,11 @@ def main():
         if p.suffix.lower() in {'.exe', '.dll', '.pyd', '.sav', '.dmp', '.pfx', '.p12', '.key', '.log'} or p.name.startswith('.env'):
             raise ValueError('Unexpected public source file: ' + rel.as_posix())
         rows.append({'path': rel.as_posix(), 'bytes': p.stat().st_size, 'sha256': sha(p)})
-    current = {'version': 'v0.3.0-preview', 'files': rows}
+    current = {'version': json.loads((root/'baseline.json').read_text(encoding='utf-8'))['version'], 'files': rows}
     if args.check:
         assert json.loads(manifest.read_text(encoding='utf-8')) == current, 'Public snapshot changed'
     else:
-        manifest.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        manifest.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     if args.assets:
         lines = [sha(p) + '  ' + p.name for p in sorted(args.assets.glob('*.zip'))]
         target = args.assets / 'SHA256SUMS.txt'
@@ -44,7 +44,7 @@ def main():
         if args.check:
             assert target.read_text(encoding='utf-8') == expected, 'Attachment checksums changed'
         else:
-            target.write_text(expected, encoding='utf-8')
+            target.write_text(expected, encoding='utf-8', newline='\n')
     print(json.dumps({'snapshot_files': len(rows), 'status': 'verified' if args.check else 'frozen'}))
 
 

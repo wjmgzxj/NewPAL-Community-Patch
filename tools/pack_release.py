@@ -36,7 +36,7 @@ def main():
             if path.is_file():
                 z.write(path, prefix + '/third_party/' + path.relative_to(root / 'third_party').as_posix())
 
-    with zipfile.ZipFile(args.output / 'NewPAL_Patch_v0.3.0-preview.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+    with zipfile.ZipFile(args.output / ('NewPAL_Patch_'+data['version']+'.zip'), 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         prefix = 'NewPAL_Patch'
         z.write(args.game_exe, prefix + '/NewPAL_Release.exe')
         for row in data['resources']:
@@ -46,7 +46,7 @@ def main():
             z.write(root / src, prefix + '/' + dest)
         notices(z, prefix)
     if args.map_tester:
-        with zipfile.ZipFile(args.output / 'NewPAL_MapTester_v0.3.0-preview.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+        with zipfile.ZipFile(args.output / ('NewPAL_MapTester_'+data['version']+'.zip'), 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
             prefix = 'NewPAL_MapTester'
             z.write(args.map_tester, prefix + '/新仙剑地图传送器.exe')
             z.write(root / 'docs/工具说明.md', prefix + '/工具说明.md')

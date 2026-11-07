@@ -1,11 +1,51 @@
 {
-  "version": "v0.3.0-preview",
+  "version": "v0.3.1-preview",
   "original_sha256": "1301e72bf46008eb74a0f49ab81d9894ab92d037d63c63d86c906aa067c961dc",
-  "target_sha1": "8e37646f6c3be09b9cb37463d6dbae50b60d7057",
-  "target_sha256": "6a2d11f58a9d4d2e794b46d2952eb13d6867ff519756c200cc24437f8efac9cd",
-  "target_size": 14468096,
-  "delta_sha256": "1c32914f48cb049e60a3e016946ae3b5c76d36eb26d6d7e342474d7a48535920",
+  "target_sha1": "2558a78380b079caf4d26ad0899eb04e8fcc4f7e",
+  "target_sha256": "e0b4be9d7958ab7b9620326b834498d0e24be9a80203c25212e07075c1812a12",
+  "target_size": 14488576,
+  "delta_sha256": "d76d7783a68a48264b428d16606d880e906708f9ab09f5f1b288456212c8f72b",
   "resources": [
+    {
+      "path": "Resource/np_gu_menu_2_add_v2.png",
+      "sha256": "5d1e213253dca6c914a652894ee110c1aac95b1610d3bc62bb1bd70ee4c09329",
+      "bytes": 65089
+    },
+    {
+      "path": "Resource/np_gu_menu_2_craft_v2.png",
+      "sha256": "b1198edd0d369581c14c8a3880f708ef6938ad5b0e1e99f36af1376ee19de749",
+      "bytes": 64945
+    },
+    {
+      "path": "Resource/np_gu_menu_3_add_v2.png",
+      "sha256": "5ade44d4a9b958c1152208f14db860bc27d9d4779f3c6f3f1f7d2161dbdf829c",
+      "bytes": 79223
+    },
+    {
+      "path": "Resource/np_gu_menu_3_craft_v2.png",
+      "sha256": "1f9cdf05962a7fb792cb21ff6703e261e76b3b71b4e743a5a9724125fc6012f2",
+      "bytes": 79057
+    },
+    {
+      "path": "Resource/np_gu_menu_3_quantity_v2.png",
+      "sha256": "11520b05044b260fe35da689bef236ca361ff1379afa33405dbba0a5b8172a28",
+      "bytes": 79176
+    },
+    {
+      "path": "Resource/np_gu_preview_name_v3.png",
+      "sha256": "c8c6583a5ece73ad2560ad0cec40d259707e5d830bbd419f9f72e2757b1467de",
+      "bytes": 1610
+    },
+    {
+      "path": "Resource/np_gu_preview_pair_v3.png",
+      "sha256": "619df91315d6f472c3b2c6d1e2726b8a5a056279b8c1fa7d5f313abdffb47ab7",
+      "bytes": 2357
+    },
+    {
+      "path": "Resource/np_gu_preview_single_v3.png",
+      "sha256": "d9fdbbda2652130d35f3f94df7d62eb215154462948b72732fe086fae8ca471b",
+      "bytes": 1866
+    },
     {
       "path": "Resource/np_lp_base_27_v1.png",
       "sha256": "f9ba6a67fdf0a57b107222ce059b892b1b9f1e96f6a13706627ee67867d77a09",

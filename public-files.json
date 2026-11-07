@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.0-preview",
+  "version": "v0.3.1-preview",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/问题反馈.md",
@@ -38,13 +38,13 @@
     },
     {
       "path": "baseline.json",
-      "bytes": 19468,
-      "sha256": "dc57bfae2c3db9d46cfe55085173f3f5d5831ad53f898668127a718facaddcec"
+      "bytes": 20260,
+      "sha256": "bc07f46eda7f4eaccdfc4aeac14c0927f3d057f881b546ac500ba284cbdbaae1"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 678,
-      "sha256": "61feb1ba387be24f2c3e465fb9af2f1d021ddf292ccb8932fdae52a97084067a"
+      "bytes": 1597,
+      "sha256": "8e8328f67682a90c52c616d506953d3de5d1caf90610eca8a5c78be0e290576a"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -53,8 +53,8 @@
     },
     {
       "path": "docs/asset-provenance.json",
-      "bytes": 44466,
-      "sha256": "2acc7e86f4458d78151cf860bbaafd82ac828dbfa2ffd194d5956d59acd5f8d6"
+      "bytes": 47109,
+      "sha256": "ccb2e3b982b56d855e00ea4621a5eabd9e96c2b3f74b80f4083b9bd1df58f11f"
     },
     {
       "path": "docs/current-validation.json",
@@ -93,18 +93,18 @@
     },
     {
       "path": "docs/source-modules.json",
-      "bytes": 27270,
-      "sha256": "b2360ddf08dae57639dd904cde718fbe1b6fa9b008035c4ac35ac68028844434"
+      "bytes": 28833,
+      "sha256": "18729abe9726e8b1035fbf164d8ce040ae9e513c05821de628ee8bd99c1ee7f7"
     },
     {
       "path": "docs/功能与状态.md",
-      "bytes": 2134,
-      "sha256": "231746bc12df5eb0cb393d90b9004a966cfaf48697931b2dd3184fe5ba253e20"
+      "bytes": 3014,
+      "sha256": "20e773e184eb0d9272f14dd98b11402fc517084aad21bcdb55aaae592259c5c2"
     },
     {
       "path": "docs/发布检查.md",
-      "bytes": 1148,
-      "sha256": "bb7decb209a79df3b6f8f62738e284aa735120663a6e010daba6dae729a49eb3"
+      "bytes": 2051,
+      "sha256": "a85fd452c8f2996f7ad6484077dd5414b1346e9cc35bad7984b23f26b4e12981"
     },
     {
       "path": "docs/发布维护流程.md",
@@ -119,37 +119,52 @@
     {
       "path": "docs/安装与还原.md",
       "bytes": 1413,
-      "sha256": "d3a849a2915ce9b6b4ee19661cb20aa95f80da97c68003f0ab82e17b606a8a7f"
+      "sha256": "3ad3c15336b5c9509119617cb54af5c2fe615fd3aea1a5995e81d4ad348e7ab1"
     },
     {
       "path": "docs/工具说明.md",
-      "bytes": 2196,
-      "sha256": "dc38cf5037d4eb3eee3de83dce20b04b033f909d22e86ff733ee868770c807b3"
+      "bytes": 2455,
+      "sha256": "4594f8ed3b665092db5e20e42a32f9aa0d85e49e06678316f869796cf3ed7655"
     },
     {
       "path": "docs/开发入口.md",
-      "bytes": 1458,
-      "sha256": "994ed79b4a3295e54317673c660f59030378c52b3efc6a00be543356dc3c9cf6"
+      "bytes": 1776,
+      "sha256": "64b477a054004621eda064c6396cf7cbd1459811082cb5659191d0a4376336ad"
+    },
+    {
+      "path": "docs/当前状态.json",
+      "bytes": 540,
+      "sha256": "8c4a869ed58824c64a53be77c94bea71e758388fc2a5d48c360e7049bf678070"
+    },
+    {
+      "path": "docs/本轮工作记录.md",
+      "bytes": 944,
+      "sha256": "c8cc11c8fa84e565ae9f4c27d2855aa1ce89981655a4e70c9afce385b449ed3c"
     },
     {
       "path": "docs/构建与验证.md",
-      "bytes": 1886,
-      "sha256": "3e428dbe8ed78822ae49aee8246b9556afccab46e8e7a1d2fe3425bd3ac646e5"
+      "bytes": 2757,
+      "sha256": "07ed799f6ad556a1741b192a271dbf6ec8c0c5e37abdc395ab66203e2ce5678b"
+    },
+    {
+      "path": "docs/炼蛊与战后机制.md",
+      "bytes": 4019,
+      "sha256": "f463b452652b0bf8f9a4b97163f412a48ae1392c6f5528e3ae22b6792ec3fa4a"
     },
     {
       "path": "docs/玩家常见问题.md",
       "bytes": 3888,
-      "sha256": "e7e80e75285ae8fa2e886f06b25b78e2e50614ca724c61b09f5a316885bd3500"
+      "sha256": "52c757e16f8473876e4dd2d71cb7baad744cafc19947b07e354b53ebb3dbb6f8"
     },
     {
       "path": "docs/知识与模块索引.md",
-      "bytes": 3217,
-      "sha256": "5ca467591f550cdb9e89f9e4c148150e2c7c60058172e07038a80900a868605d"
+      "bytes": 3543,
+      "sha256": "b2e7eec5e16806f9b806dd53ca0d4cf6c8d495db89dffb67c27fd343e5646c1f"
     },
     {
       "path": "docs/社区发布文案.md",
-      "bytes": 3630,
-      "sha256": "090606cc4197551d38d7b5db1c2b6f88b8ac1efd326b8873cafac41c956fc688"
+      "bytes": 3675,
+      "sha256": "b736351a4fe82a5773bad2168338d725fe4166e1a844517c9f18372f4c22172e"
     },
     {
       "path": "docs/维护与隐私.md",
@@ -163,18 +178,63 @@
     },
     {
       "path": "patch/latest.json.gz",
+      "bytes": 306198,
+      "sha256": "d76d7783a68a48264b428d16606d880e906708f9ab09f5f1b288456212c8f72b"
+    },
+    {
+      "path": "patch/v0.3.0-baseline.json.gz",
       "bytes": 300562,
       "sha256": "1c32914f48cb049e60a3e016946ae3b5c76d36eb26d6d7e342474d7a48535920"
     },
     {
       "path": "README.md",
-      "bytes": 8860,
-      "sha256": "d793a0bf2d78e308070fa7e07dd7712dbf668b1604bfcd90b27e74d249dca744"
+      "bytes": 9655,
+      "sha256": "8bc94fcf4e0185e995da32c4e9fdd076ddbd5980cb5efb72aa3239345b099d55"
     },
     {
       "path": "requirements-map.txt",
       "bytes": 46,
       "sha256": "9c62754e9ccb5ae9cfe1ce969f5b95fbf238da69055426e02e757e74c3a4faaa"
+    },
+    {
+      "path": "Resource/np_gu_menu_2_add_v2.png",
+      "bytes": 65089,
+      "sha256": "5d1e213253dca6c914a652894ee110c1aac95b1610d3bc62bb1bd70ee4c09329"
+    },
+    {
+      "path": "Resource/np_gu_menu_2_craft_v2.png",
+      "bytes": 64945,
+      "sha256": "b1198edd0d369581c14c8a3880f708ef6938ad5b0e1e99f36af1376ee19de749"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_add_v2.png",
+      "bytes": 79223,
+      "sha256": "5ade44d4a9b958c1152208f14db860bc27d9d4779f3c6f3f1f7d2161dbdf829c"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_craft_v2.png",
+      "bytes": 79057,
+      "sha256": "1f9cdf05962a7fb792cb21ff6703e261e76b3b71b4e743a5a9724125fc6012f2"
+    },
+    {
+      "path": "Resource/np_gu_menu_3_quantity_v2.png",
+      "bytes": 79176,
+      "sha256": "11520b05044b260fe35da689bef236ca361ff1379afa33405dbba0a5b8172a28"
+    },
+    {
+      "path": "Resource/np_gu_preview_name_v3.png",
+      "bytes": 1610,
+      "sha256": "c8c6583a5ece73ad2560ad0cec40d259707e5d830bbd419f9f72e2757b1467de"
+    },
+    {
+      "path": "Resource/np_gu_preview_pair_v3.png",
+      "bytes": 2357,
+      "sha256": "619df91315d6f472c3b2c6d1e2726b8a5a056279b8c1fa7d5f313abdffb47ab7"
+    },
+    {
+      "path": "Resource/np_gu_preview_single_v3.png",
+      "bytes": 1866,
+      "sha256": "d9fdbbda2652130d35f3f94df7d62eb215154462948b72732fe086fae8ca471b"
     },
     {
       "path": "Resource/np_lp_base_27_v1.png",
@@ -788,8 +848,8 @@
     },
     {
       "path": "THIRD_PARTY.md",
-      "bytes": 3818,
-      "sha256": "a3792ae6cbd2bdf45aa962d5a842a3367394ea0e2d1e65ed27a6c7226a610341"
+      "bytes": 3972,
+      "sha256": "48423ac4a01b8416f7f6de5f09b96e7cfd76ecfb181eb9976b733e69cc1cd7c0"
     },
     {
       "path": "tool-baseline.json",
@@ -802,19 +862,29 @@
       "sha256": "89393b80924583439dfd4fadb68430fdcd604fa3c07a8fb1089bea8ed1873e14"
     },
     {
+      "path": "tools/build_updated_from_source.py",
+      "bytes": 3652,
+      "sha256": "ab39de416662c87d616509045510857a055bae04a555011e86ed0fc3cfa3184e"
+    },
+    {
       "path": "tools/check_repository.py",
       "bytes": 1766,
       "sha256": "8e674646987290f489ca8f2449497fb398316b8300d76521dfd787e653f29aef"
     },
     {
       "path": "tools/freeze_release.py",
-      "bytes": 2136,
-      "sha256": "86f4e96449404eaee44331b239e5792b94242b387e3fa9ff15cee269444b6043"
+      "bytes": 2221,
+      "sha256": "dd96827154c40956b29763bc9d9b8c6a5ccab46e513adebd7f4357ed0d087d2b"
     },
     {
       "path": "tools/pack_release.py",
-      "bytes": 2963,
-      "sha256": "943670c799f54bc5b6555b7c0e8fdc6e436b365b9d4a21d13444f57ca0a924a5"
+      "bytes": 2977,
+      "sha256": "dba9be55b8d332d725f55b079244c51b3f5047d399ed54ef09991d5b1bf50345"
+    },
+    {
+      "path": "tools/verify_gu_runtime.py",
+      "bytes": 3495,
+      "sha256": "be07b3bc396928c1cb71e14be8e9cec451260725f3d6c83c3ba8d93bef4301b4"
     },
     {
       "path": "tools/verify_map_source.py",
@@ -840,6 +910,11 @@
       "path": "补丁工作仓库/候选版本/dungeon-map-v2/verification.json",
       "bytes": 2380,
       "sha256": "d1dc5605ec6cc775f67b43bb87034346b7251bb47acd627634e3cc30be6d2fde"
+    },
+    {
+      "path": "补丁工作仓库/候选版本/gu-batch-v6/verification.json",
+      "bytes": 3978,
+      "sha256": "cdb5ba4ced4a071b30f2ae63c03dad5f4bee8cd53c1969075266f2f55e160b1a"
     },
     {
       "path": "补丁工作仓库/候选版本/lotus-map-v1/alpha.bin",
@@ -1067,6 +1142,11 @@
       "sha256": "f45377bfd98d0c5df9c1fb43717689937b2d0ec386e5b5321d1d3eefb4909e4a"
     },
     {
+      "path": "补丁工作仓库/候选版本/native-recovery-v2/verification.json",
+      "bytes": 745,
+      "sha256": "31584165dd1e18f6605ede09092bd845ca04de83dd131dbf9bf6510096477eaf"
+    },
+    {
       "path": "补丁工作仓库/候选版本/painted-map-v1/candidate.json",
       "bytes": 1614,
       "sha256": "6aff39115020ec38ba29a60db2fd4454f1f209cba8ac20564363a1b3a25bee58"
@@ -1080,6 +1160,11 @@
       "path": "补丁工作仓库/候选版本/painted-map-v1/verification.json",
       "bytes": 2249,
       "sha256": "66c65448ed23f353f7d9b93b0ed5dd9a0106a2bf6e3f4c6d9208910b09a4d238"
+    },
+    {
+      "path": "补丁工作仓库/候选版本/postbattle-popup-skip-v1/verification.json",
+      "bytes": 686,
+      "sha256": "1814f4b7e506136cb80d5580e6063638c1be23444509f40f8454363aa4e91992"
     },
     {
       "path": "补丁工作仓库/候选版本/story-motion-v2/candidate.json",
@@ -1257,6 +1342,21 @@
       "sha256": "506cd0222f60fa454a13a654d52261033a8dd35102af0a2521f0f103a8a53b80"
     },
     {
+      "path": "补丁工作仓库/脚本/gu_batch_v6.c",
+      "bytes": 18255,
+      "sha256": "051240a07db0dfe2e8e28da6a993ec125c916a4c009c3baa4ebd1687988b386f"
+    },
+    {
+      "path": "补丁工作仓库/脚本/gu_batch_v6.py",
+      "bytes": 4724,
+      "sha256": "fb4185f0684dd248c4485c11b49f5f9f1bdf155c85c98a3dfe76893a7bd77433"
+    },
+    {
+      "path": "补丁工作仓库/脚本/gu_test_fixtures_v6.py",
+      "bytes": 11648,
+      "sha256": "57b4e586d3d79bde4c1c0eee5c53f5cfa6760561fa197d6303047f5dbb14ad08"
+    },
+    {
       "path": "补丁工作仓库/脚本/hover_hand_v1.py",
       "bytes": 6008,
       "sha256": "ff5d93f7cd24301c5a643a39b3ae41a9f4150c39cd0c8b77a8f3e378bf370e69"
@@ -1360,6 +1460,16 @@
       "path": "补丁工作仓库/脚本/portable_map_bridge_v1.py",
       "bytes": 10952,
       "sha256": "47d0777a4ca5edc0840a49bff26edb0424fe93f982f746a0bbbec467f7b53f4c"
+    },
+    {
+      "path": "补丁工作仓库/脚本/postbattle_native_recovery_v2.py",
+      "bytes": 2719,
+      "sha256": "30fa06f42b75c5d008634e9dea40f1a3d43f41e81235e63106c2194488aa0816"
+    },
+    {
+      "path": "补丁工作仓库/脚本/postbattle_popup_skip_v1.py",
+      "bytes": 6697,
+      "sha256": "7f9c72fc45ee4af714bc9cfc91cb47e6749524c1d7284dc4b92435388b5ddc79"
     },
     {
       "path": "补丁工作仓库/脚本/postbattle_recovery_v1.py",

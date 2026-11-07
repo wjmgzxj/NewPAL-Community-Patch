@@ -24,7 +24,10 @@
     "extract_map_grid_v1",
     "build_map_export_index_v1",
     "build_map_test_catalog_v1",
-    "export_native_flag_groups_v1"
+    "export_native_flag_groups_v1",
+    "postbattle_native_recovery_v2",
+    "postbattle_popup_skip_v1",
+    "gu_batch_v6"
   ],
   "modules": [
     {
@@ -231,7 +234,7 @@
       "path": "补丁工作仓库/脚本/flash_v4.py",
       "sha256": "729af00f52700eb933ae636987f66705b2a493c9e48bf26b120c6b71a73d1189",
       "imports": [],
-      "entry_policy": "library/research; use documented entry points only"
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
     },
     {
       "module": "four_features_v2",
@@ -523,7 +526,7 @@
       "imports": [
         "flash_v4"
       ],
-      "entry_policy": "library/research; use documented entry points only"
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
     },
     {
       "module": "preview_luocha_compact_v5",
@@ -576,7 +579,7 @@
       "imports": [
         "flash_v4"
       ],
-      "entry_policy": "library/research; use documented entry points only"
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
     },
     {
       "module": "simple_batch_v1",
@@ -711,6 +714,51 @@
         "mouse_motion_v2"
       ],
       "entry_policy": "library/research; use documented entry points only"
+    },
+    {
+      "module": "gu_batch_v6",
+      "path": "补丁工作仓库/脚本/gu_batch_v6.py",
+      "sha256": "fb4185f0684dd248c4485c11b49f5f9f1bdf155c85c98a3dfe76893a7bd77433",
+      "imports": [
+        "flash_v4"
+      ],
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
+    },
+    {
+      "module": "postbattle_popup_skip_v1",
+      "path": "补丁工作仓库/脚本/postbattle_popup_skip_v1.py",
+      "sha256": "7f9c72fc45ee4af714bc9cfc91cb47e6749524c1d7284dc4b92435388b5ddc79",
+      "imports": [
+        "flash_v4",
+        "settings_toggle_v1"
+      ],
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
+    },
+    {
+      "module": "postbattle_native_recovery_v2",
+      "path": "补丁工作仓库/脚本/postbattle_native_recovery_v2.py",
+      "sha256": "30fa06f42b75c5d008634e9dea40f1a3d43f41e81235e63106c2194488aa0816",
+      "imports": [
+        "flash_v4",
+        "postbattle_recovery_v1"
+      ],
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
+    },
+    {
+      "module": "gu_test_fixtures_v6",
+      "path": "补丁工作仓库/脚本/gu_test_fixtures_v6.py",
+      "sha256": "57b4e586d3d79bde4c1c0eee5c53f5cfa6760561fa197d6303047f5dbb14ad08",
+      "imports": [
+        "gu_batch_v6"
+      ],
+      "entry_policy": "Use tools/build_updated_from_source.py or tools/verify_gu_runtime.py; historical module mains are not installers"
+    },
+    {
+      "module": "gu_batch_v6_c",
+      "path": "补丁工作仓库/脚本/gu_batch_v6.c",
+      "sha256": "051240a07db0dfe2e8e28da6a993ec125c916a4c009c3baa4ebd1687988b386f",
+      "imports": [],
+      "entry_policy": "freestanding x86 C; built by gu_batch_v6.py"
     }
   ],
   "external_import_names": [
@@ -750,6 +798,7 @@
     "Import closure is not full runtime file dependency closure.",
     "Historical module names remain because current code imports them.",
     "Do not execute historical installers or main functions.",
-    "Binary reconstruction is supported; full source-only rebuild still needs input cleanup."
+    "Binary reconstruction is supported; full source-only rebuild still needs input cleanup.",
+    "v0.3.1 adds source build of recovery/popup/gu stages on frozen v0.3.0 delta; earlier feature reconstruction remains frozen-delta based."
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "status": "passed; gameplay acceptance pending",
+  "baseline_sha256": "6a2d11f58a9d4d2e794b46d2952eb13d6867ff519756c200cc24437f8efac9cd",
+  "candidate_sha256": "f8ced732c5d79da82492db6b55f2aab7a362b4616b8316ea884f9550d6dca90f",
+  "helper_integer_and_register_cases": 10000,
+  "native_3_member_settlement_cases": 80,
+  "actual_changed_bytes": 339,
+  "change_allowlist_passed": true,
+  "examples": [
+    {
+      "alive": false,
+      "hp": 388,
+      "mp": 388
+    },
+    {
+      "alive": true,
+      "hp": 1,
+      "mp": 0
+    }
+  ],
+  "separate_exit_hook_restored": true,
+  "limitations": [
+    "UI/attribute lookup substituted; no live gameplay.",
+    "Native KO eligibility retained; living party no longer receives independent 6%."
+  ]
+}
