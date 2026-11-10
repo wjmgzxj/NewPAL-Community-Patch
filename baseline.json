@@ -1,10 +1,10 @@
 {
-  "version": "v0.3.1-preview",
+  "version": "v0.3.2-preview",
   "original_sha256": "1301e72bf46008eb74a0f49ab81d9894ab92d037d63c63d86c906aa067c961dc",
-  "target_sha1": "2558a78380b079caf4d26ad0899eb04e8fcc4f7e",
-  "target_sha256": "e0b4be9d7958ab7b9620326b834498d0e24be9a80203c25212e07075c1812a12",
-  "target_size": 14488576,
-  "delta_sha256": "d76d7783a68a48264b428d16606d880e906708f9ab09f5f1b288456212c8f72b",
+  "target_sha1": "e453628f4b295535dc1ee8b478f34d847f3ce073",
+  "target_sha256": "4067f280219357317ae2806163930f922303314cbf8e1543aa7e757f179c5d2e",
+  "target_size": 16405504,
+  "delta_sha256": "5e81f7d6bad74a7884a85c8a9243bf659853450793a66decaf684e5e0659e82e",
   "resources": [
     {
       "path": "Resource/np_gu_menu_2_add_v2.png",
@@ -403,8 +403,8 @@
     },
     {
       "path": "Resource/np_lr_road_503_v1.png",
-      "sha256": "5e7c39574069ef36f2d0e5a51f69b1926ae71b45794a23ca7d127531f9fa293b",
-      "bytes": 386242
+      "sha256": "694dadd90e3f19b9d5a63d9354b315a404272f0714fca72f01cba2217b2353b7",
+      "bytes": 150701
     },
     {
       "path": "Resource/np_lr_road_504_v1.png",
@@ -418,13 +418,13 @@
     },
     {
       "path": "Resource/np_lr_road_506_v1.png",
-      "sha256": "ade77087df4d1374d9f09c15d4d5cded8af3a496f175c68e2ad3c1e62924e217",
-      "bytes": 346934
+      "sha256": "c3783b727e1e780ea07433fd9b9abc06af8227ff0472e5564f7a998c3c6dc42b",
+      "bytes": 114811
     },
     {
       "path": "Resource/np_lr_road_507_v1.png",
-      "sha256": "f6e3a317a4a368fb8a3a0b24d4882643d30abe951184dd5863b9c0fe6d51cb95",
-      "bytes": 317578
+      "sha256": "75682d72d188546dfc11cbd67ca1d189aae90e5c24f72ee5fbc1079347810267",
+      "bytes": 37356
     },
     {
       "path": "Resource/np_lr_road_508_v1.png",
@@ -433,18 +433,18 @@
     },
     {
       "path": "Resource/np_lr_road_509_v1.png",
-      "sha256": "1aace319b498682d60a985e8664d944c2729788cb7fbcc7d28459c04a081560a",
-      "bytes": 323471
+      "sha256": "f016e5bfc1dbea9001b3145fe0ec7306063772d4752ebafe238abd4e0f0feb17",
+      "bytes": 44801
     },
     {
       "path": "Resource/np_lr_road_510_v1.png",
-      "sha256": "f2d5195a8963445273b421310ae209d72879bc1b206ea5bd9cba15091d77c6cf",
-      "bytes": 310131
+      "sha256": "d18c92945ba4eed503872404df2012e2e01bba00d4056cf63f8a05d60c8e726e",
+      "bytes": 29355
     },
     {
       "path": "Resource/np_lr_road_511_v1.png",
-      "sha256": "30437def2e5f1abb36e12abeb5c41985cdffa00ea196b1d4c61b10cb1c75a4a9",
-      "bytes": 368458
+      "sha256": "50d7d65b675a4b0c10b46df202c6206e378a96f8bbfde58fc1889d6bb1ebf65a",
+      "bytes": 132412
     },
     {
       "path": "Resource/np_lr_road_512_v1.png",
@@ -453,8 +453,8 @@
     },
     {
       "path": "Resource/np_lr_road_513_v1.png",
-      "sha256": "d7a3dfdb59328ffa1a523d247ee847e97f12db34eda64cf2ed1b65dd5ec5a601",
-      "bytes": 314151
+      "sha256": "6f8dabbe1461c74e89e9eec8a4d4d2efd6010b3c2a54fcf2affe39896a90bf8a",
+      "bytes": 55115
     },
     {
       "path": "Resource/np_lr_road_514_v1.png",
@@ -473,8 +473,8 @@
     },
     {
       "path": "Resource/np_lr_road_517_v1.png",
-      "sha256": "3e6d443e7b5b9ea640493e422811dcc9d57450c2e78b3b86955f0e33db0e0f8d",
-      "bytes": 323636
+      "sha256": "5df62852d836087271152c0953184fb04e77ba5c898419b130da5fc67cb2c2a9",
+      "bytes": 45175
     },
     {
       "path": "Resource/np_lr_road_518_v1.png",
@@ -600,6 +600,36 @@
       "path": "Resource/np_option_on_3.png",
       "sha256": "a3ec7e77b348781fb69aa605cfd51c4c4be8fbcb693ef08509194162d2abd752",
       "bytes": 78326
+    },
+    {
+      "path": "Resource/np_sp_base_17_v1.png",
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58",
+      "bytes": 518214
+    },
+    {
+      "path": "Resource/np_sp_base_18_v1.png",
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58",
+      "bytes": 518214
+    },
+    {
+      "path": "Resource/np_sp_base_817_v1.png",
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58",
+      "bytes": 518214
+    },
+    {
+      "path": "Resource/np_sp_road_17_v1.png",
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0",
+      "bytes": 479201
+    },
+    {
+      "path": "Resource/np_sp_road_18_v1.png",
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0",
+      "bytes": 479201
+    },
+    {
+      "path": "Resource/np_sp_road_817_v1.png",
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0",
+      "bytes": 479201
     }
   ],
   "gameplay_status": "Latest nameplate changes offline checked; final gameplay feedback pending"

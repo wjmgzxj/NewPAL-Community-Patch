@@ -1,11 +1,18 @@
 {
-  "version": "v0.3.1-preview",
-  "target_sha256": "e0b4be9d7958ab7b9620326b834498d0e24be9a80203c25212e07075c1812a12",
-  "runtime_pngs": 119,
-  "gu": "用户实机确认首次选料/指针/合拢正常；54类离线通过；非全配方/硬件遍历",
-  "postbattle_popup_skip": "离线通过，独立实机反馈待补",
-  "native_recovery": "离线通过，独立实机反馈待补",
-  "maps": "继承0.3.0范围，无新地图；片区标题最终实机反馈仍待补",
-  "tool": "map-tester-v0.3.1-preview；接口识别；离线和独立启动通过，新识别版实际连接待反馈",
-  "tool_release": "map-tester-v0.3.1-preview"
+  "version": "v0.3.2-preview",
+  "target_sha256": "4067f280219357317ae2806163930f922303314cbf8e1543aa7e757f179c5d2e",
+  "runtime_pngs": 125,
+  "installed_baseline": "settle-message-skip-v5; rejected cursor v6/v7 excluded",
+  "maps": "梦境、再入罗刹前/后、荷花池、十里坡17/18/817；十里坡用户确认落地",
+  "protection_interaction": "用户确认10秒保护期间手动遇敌/宝箱正常；被动保护保留",
+  "settlement_skip": "用户确认经验/物品/升级/属性等战后信息可跳过；统一消息链v5",
+  "map_workflow": "人工修图/排版→地标配准→完整预览→实机定位/揭雾/存读核对",
+  "gu": "继承v0.3.1用户确认选料/指针/合拢；非全配方/硬件验收",
+  "native_recovery": "继承v2离线通过；独立实机反馈仍待补",
+  "nameplates": "继承离线证据；完整独立实机验收仍待补",
+  "known_issues": [
+    "启动双鼠标/等待光标未彻底解决",
+    "鼠标可能被战后弹窗遮挡"
+  ],
+  "tool_release": "map-tester-v0.3.1-preview; this game chain compatibility not verified"
 }

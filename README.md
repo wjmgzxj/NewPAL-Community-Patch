@@ -4,11 +4,11 @@
 
 **给 Steam 正版《新仙剑奇侠传》补上更顺手的操作、优化的战斗节奏，修复恶性bug，以及持续开发中的迷宫探索地图。** 这是仙剑系列爱好者制作的非官方修正补丁，目前仍在研发中。
 
-**当前发布：v0.3.1-preview（公开预览版）**
+**当前发布：v0.3.2-preview（公开预览版）**
 
-> **[下载玩家补丁：NewPAL_Patch_v0.3.1-preview.zip（约 18.4 MiB）](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/download/v0.3.1-preview/NewPAL_Patch_v0.3.1-preview.zip)**
+> **[下载玩家补丁：NewPAL_Patch_v0.3.2-preview.zip](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/download/v0.3.2-preview/NewPAL_Patch_v0.3.2-preview.zip)**
 >
-> [查看发布说明和所有附件](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.1-preview) · [安装／还原指南](docs/安装与还原.md) · [玩家常见问题](docs/玩家常见问题.md)
+> [查看发布说明和所有附件](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.2-preview) · [安装／还原指南](docs/安装与还原.md) · [玩家常见问题](docs/玩家常见问题.md)
 
 **普通玩家只需下载 `NewPAL_Patch` 安装包。** 无需 Python，不用先安装旧补丁。GitHub 首页 **Code → Download ZIP** 下载的是开发源码，不是可直接覆盖的玩家补丁。
 
@@ -24,13 +24,13 @@
 ### 2. 探索时减少无谓追逐和重复遇敌
 
 - **普通地图小怪移动、追击速度降低，追击范围缩小**，走迷宫时不会一直被敌人紧贴着追。剧情中的动画脚本运动已做单独处理，不会因怪物速度减慢而被拖慢。
-- **战斗胜利或逃跑后有 10 秒不遇敌保护**，保护期间在队角色身体有轻微闪烁作为提示；可以在游戏的系统设置中开关，此设置全局通用，不受游戏重启影响。使用十里香召敌的 60 秒期间，不叠加不遇敌buff，避免两套机制冲突。
+- **战斗胜利或逃跑后有 10 秒不遇敌保护**，保护期间在队角色身体有轻微闪烁作为提示；可以在游戏的系统设置中开关，此设置全局通用，不受游戏重启影响。使用十里香召敌的 60 秒期间，不叠加不遇敌buff，避免两套机制冲突。保护期间仍可主动点击普通敌人进战、开宝箱；被动碰撞遇敌仍受保护。
 
 ### 3. 战斗节奏改进
 
 原版进入战斗常需要经历角色停住、遇敌怪叫和黑屏等待，大约有4秒左右时长。补丁调整进入战斗的时序，让遇敌后战斗画面与界面可以瞬间加载，同时保留原本的怪叫与背景音乐衔接，**减少了重复等待造成的焦虑**。
 
-战后升级／学技能提示可用空格、回车、手柄 A／B 或鼠标左键提前结束；仅作用于这两类提示，其他剧情等待保持原流程。该项离线验证通过，尚未单独获得实机反馈。
+战后经验、道具获得、升级、属性提升、学技能及逃跑等结算消息，可用空格、回车、手柄 A／B 或鼠标左键提前结束当前提示；保留原奖励结算和消息顺序。此前只有两类窗口的修正覆盖不足，本版补齐统一消息链，用户已确认战后信息可以跳过。
 
 另外，单次群体攻击消灭多个敌人时，死亡演出可同时开始，不再依次等待每只怪物消失；重复声音也会合并处理。还修复了部分怪物向左上方移动时可能出现的异常画面帧。特殊剧情战斗另有兼容处理，奖励仍按原有规则结算。
 
@@ -50,7 +50,7 @@
 
 地图系统是目前持续开发的重点。进入已支持的迷宫后，可打开地图查看角色位置；随着角色实际走过的路线逐步揭开迷雾，探索记录会保存，方便找回尚未走过的道路。
 
-**当前覆盖：** 梦境罗刹洞、再入罗刹洞前／后、仙灵岛荷花池。**其他迷宫尚未完成。**
+**当前覆盖：** 梦境罗刹洞、再入罗刹洞前／后、仙灵岛荷花池、十里坡（场景 17／18／817）。**其他迷宫尚未完成。**
 
 **操作：** 键盘 `M`／手柄 `Back` 打开或关闭地图；`Esc`／`B` 关闭；手柄 `Start` 仍打开游戏原本的主菜单。
 
@@ -60,7 +60,7 @@
 
 **地图名称显示说明：** 片区名根据实际进入记录显隐的新规则已完成离线检查。
 
-**地图开发进度说明：** 目前公开版本配套 **119 张 PNG 资源**。发布附件中的地图美术候选素材用于后续开发，**但目前版本尚未开发完成实装**。
+**地图开发进度说明：** 目前公开版本配套 **125 张 PNG 资源**。十里坡已接入人物定位、逐步揭雾和探索记录；新增[人工参与制图流程](docs/人工参与制图流程.md)，便于协作者修图、排版并由程序完成配准。旧版美术候选附件仍是后续开发参考，不代表全部地图已实装。
 
 ## 另附地图传送测试工具（可选）
 
@@ -72,18 +72,18 @@
 
 *地图传送器实际运行界面；功能说明见 [工具说明](docs/工具说明.md)。*
 
-新版可选传送器见 [地图工具下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/map-tester-v0.3.1-preview)：取消整体EXE哈希白名单，改为核对实际传送接口，当前 v0.3.1 已通过离线识别及独立启动检查，新识别版实际连接待反馈。后续美术附件仍在 [v0.3.0 下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.0-preview)。
+本次发布页一并附上已固定的 [NewPAL_MapTester_v0.3.1-preview.zip](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/download/v0.3.2-preview/NewPAL_MapTester_v0.3.1-preview.zip)：取消整体EXE哈希白名单，改为核对实际传送接口，当前 v0.3.1 已通过离线识别及独立启动检查，新识别版实际连接待反馈。该工具尚未针对本版新 EXE 完成接口适配核对，普通玩家无需下载。后续美术附件仍在 [v0.3.0 下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.0-preview)。
 
 ## 安装与下载文件说明
 
 1. 在 Steam 中右键《新仙剑奇侠传》→ **管理 → 浏览本地文件**，找到游戏目录（一般为 `steam/steamapps/common/NewPAL`）。
 2. 退出游戏，**先备份原 EXE、可能覆盖的同名 PNG 及存档**。
-3. 下载并解压 `NewPAL_Patch_v0.3.1-preview.zip`，按 [安装指南](docs/安装与还原.md) 将包内 **EXE 与 Resource 中配套的 119 张 PNG** 复制到游戏目录，替换同名文件；不要删掉原来的整个 Resource 文件夹，也不要造成 `Resource/Resource` 嵌套。
+3. 下载并解压 `NewPAL_Patch_v0.3.2-preview.zip`，按 [安装指南](docs/安装与还原.md) 将包内 **EXE 与 Resource 中配套的 125 张 PNG** 复制到游戏目录，替换同名文件；不要删掉原来的整个 Resource 文件夹，也不要造成 `Resource/Resource` 嵌套。
 4. 通过 Steam 启动游戏。如需回退，请按 [还原步骤](docs/安装与还原.md) 恢复备份。
 
 | 下载文件 | 适合谁 | 是否必需 |
 | --- | --- | --- |
-| **NewPAL_Patch_v0.3.1-preview.zip** | **普通玩家** | **必需，只下载它即可** |
+| **NewPAL_Patch_v0.3.2-preview.zip** | **普通玩家** | **必需，只下载它即可** |
 | [NewPAL_MapTester_v0.3.1-preview.zip](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/download/map-tester-v0.3.1-preview/NewPAL_MapTester_v0.3.1-preview.zip) | 地图测试人员 | 可选 |
 | NewPAL_MapArtSources_v0.3.0-preview.zip | 地图美术／开发协作者 | 可选，非已完成地图包 |
 | SHA256SUMS.txt | 需要校验下载内容的用户 | 可选 |
@@ -92,7 +92,7 @@
 
 ## 反馈问题与参与开发
 
-这是一个**预览版**。完整剧情、全部迷宫和不同 Windows／手柄环境尚未全面实测。欢迎报告可稳定复现的崩溃、异常或其他问题。
+这是一个**预览版**。启动后偶发双鼠标／等待光标，以及鼠标被战后弹窗遮挡仍待修复；本版未包含实机否定的鼠标置顶实验。完整剧情、全部迷宫和不同 Windows／手柄环境尚未全面实测。欢迎报告可稳定复现的崩溃、异常或其他问题。
 
 可通过 [GitHub Issues](https://github.com/lihang801290-design/NewPAL-Community-Patch/issues/new/choose) 提交游戏与补丁版本、地图／剧情位置、操作步骤以及预期和实际结果。请勿上传私人账号、访问密钥、未经清理的完整日志或存档。
 

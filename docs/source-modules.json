@@ -27,7 +27,11 @@
     "export_native_flag_groups_v1",
     "postbattle_native_recovery_v2",
     "postbattle_popup_skip_v1",
-    "gu_batch_v6"
+    "gu_batch_v6",
+    "shilipo_runtime_v1",
+    "encounter_object_split_v1",
+    "encounter_manual_reentry_v1",
+    "settle_message_skip_v5"
   ],
   "modules": [
     {
@@ -759,6 +763,60 @@
       "sha256": "051240a07db0dfe2e8e28da6a993ec125c916a4c009c3baa4ebd1687988b386f",
       "imports": [],
       "entry_policy": "freestanding x86 C; built by gu_batch_v6.py"
+    },
+    {
+      "module": "shilipo_runtime_v1",
+      "path": "补丁工作仓库/脚本/shilipo_runtime_v1.py",
+      "sha256": "ca05b452203ba684d9489a3e3ca942e7fdee4037e27cc757e393dd504288e6d3",
+      "imports": [
+        "PIL",
+        "argparse",
+        "flash_v4",
+        "hashlib",
+        "importlib",
+        "json",
+        "luocha_return_runtime_v1",
+        "numpy",
+        "pathlib",
+        "shutil",
+        "struct"
+      ],
+      "entry_policy": "Current v0.3.2 library; call tools/build_release_additions_v032.py, not historical installers"
+    },
+    {
+      "module": "encounter_object_split_v1",
+      "path": "补丁工作仓库/脚本/encounter_object_split_v1.py",
+      "sha256": "5f7637a5595c1b01d6ccbaf6f836a1b38f227652656a7e52392f57d6038b70d4",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "struct"
+      ],
+      "entry_policy": "Current v0.3.2 library; call tools/build_release_additions_v032.py, not historical installers"
+    },
+    {
+      "module": "encounter_manual_reentry_v1",
+      "path": "补丁工作仓库/脚本/encounter_manual_reentry_v1.py",
+      "sha256": "4464b5c91682e18b92ab2ea032a86789a0801b1180ca8551b0fab8feff8b402b",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "struct"
+      ],
+      "entry_policy": "Current v0.3.2 library; call tools/build_release_additions_v032.py, not historical installers"
+    },
+    {
+      "module": "settle_message_skip_v5",
+      "path": "补丁工作仓库/脚本/settle_message_skip_v5.py",
+      "sha256": "9da947c3c187cbf58a804aed694dc4c90d168af08d2a64e0c7c94caad13bead6",
+      "imports": [
+        "flash_v4",
+        "hashlib",
+        "struct"
+      ],
+      "entry_policy": "Current v0.3.2 library; call tools/build_release_additions_v032.py, not historical installers"
     }
   ],
   "external_import_names": [

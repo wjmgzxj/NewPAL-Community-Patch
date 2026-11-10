@@ -1,0 +1,52 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "scene": 17,
+      "width": 120,
+      "height": 90,
+      "tx": 68,
+      "ty": 90,
+      "numerator": 234,
+      "denominator": 1000,
+      "page": 0,
+      "family": 0,
+      "base": "np_sp_base_17_v1.png",
+      "overlay": "np_sp_road_17_v1.png",
+      "ports": {}
+    },
+    {
+      "index": 1,
+      "scene": 18,
+      "width": 120,
+      "height": 90,
+      "tx": 68,
+      "ty": 90,
+      "numerator": 234,
+      "denominator": 1000,
+      "page": 0,
+      "family": 0,
+      "base": "np_sp_base_18_v1.png",
+      "overlay": "np_sp_road_18_v1.png",
+      "ports": {}
+    },
+    {
+      "index": 2,
+      "scene": 817,
+      "width": 120,
+      "height": 90,
+      "tx": 68,
+      "ty": 90,
+      "numerator": 234,
+      "denominator": 1000,
+      "page": 0,
+      "family": 0,
+      "base": "np_sp_base_817_v1.png",
+      "overlay": "np_sp_road_817_v1.png",
+      "ports": {}
+    }
+  ],
+  "links": [],
+  "pages": 1,
+  "note": "single shared display layer; three independent fog masks"
+}

@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.1-preview",
+  "version": "v0.3.2-preview",
   "files": [
     {
       "path": ".agents/skills/newpal-release/agents/openai.yaml",
@@ -58,13 +58,13 @@
     },
     {
       "path": "baseline.json",
-      "bytes": 20260,
-      "sha256": "bc07f46eda7f4eaccdfc4aeac14c0927f3d057f881b546ac500ba284cbdbaae1"
+      "bytes": 21889,
+      "sha256": "9465a74c8fe17acf77c75d2604b76632703f21e8d3ef1097afde2fb4788d9c41"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1597,
-      "sha256": "8e8328f67682a90c52c616d506953d3de5d1caf90610eca8a5c78be0e290576a"
+      "bytes": 2283,
+      "sha256": "6c6ab7881213cb3e00b733da202d61923b3208c8213353429658475198a7e068"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -73,13 +73,13 @@
     },
     {
       "path": "docs/asset-provenance.json",
-      "bytes": 47109,
-      "sha256": "ccb2e3b982b56d855e00ea4621a5eabd9e96c2b3f74b80f4083b9bd1df58f11f"
+      "bytes": 49596,
+      "sha256": "2f71509676d6bec6c86dd72440faa82e9f591fbed5dba0695bd9905067fb611d"
     },
     {
       "path": "docs/current-validation.json",
-      "bytes": 391,
-      "sha256": "09613756d1d1cff8202b72331a066d7b08352894ad82b6096fe96ce5dc66fb52"
+      "bytes": 1662,
+      "sha256": "e95c9b751040330f6be6657c757b8f09bed26856cbe3be6009447212a55bfac6"
     },
     {
       "path": "docs/images/classic-banner.png",
@@ -118,8 +118,13 @@
     },
     {
       "path": "docs/source-modules.json",
-      "bytes": 28833,
-      "sha256": "18729abe9726e8b1035fbf164d8ce040ae9e513c05821de628ee8bd99c1ee7f7"
+      "bytes": 30797,
+      "sha256": "91d5a0d982c021e5c1e1c39f00be7bfa5ad61069ffd240f86770cf1ff69406d5"
+    },
+    {
+      "path": "docs/人工参与制图流程.md",
+      "bytes": 2373,
+      "sha256": "ae2918fd99961ce3e75649ac4318ff1607ebb46a71484e0b74868617ff4013ee"
     },
     {
       "path": "docs/传送器接口兼容.md",
@@ -127,14 +132,24 @@
       "sha256": "c87654d455829540037f7673d56a046f4de72dac0bea8629d8584c83f25e2fa7"
     },
     {
+      "path": "docs/保护期与结算机制.md",
+      "bytes": 2289,
+      "sha256": "f78dce122d60120be73b75282a97bb4be1e83b6f573860d5b58fb70256c01e07"
+    },
+    {
       "path": "docs/功能与状态.md",
-      "bytes": 3014,
-      "sha256": "20e773e184eb0d9272f14dd98b11402fc517084aad21bcdb55aaae592259c5c2"
+      "bytes": 4290,
+      "sha256": "7053affa44fc0fa905137f4a98dd3f2a6439d2bb02299b0872c5bd8b2a8ceedc"
+    },
+    {
+      "path": "docs/协作包使用.md",
+      "bytes": 1095,
+      "sha256": "c311f95da37a719d97282224d95d35f3adbf3ccfb10af9e9c22bb7f3e24c59bd"
     },
     {
       "path": "docs/发布检查.md",
-      "bytes": 2051,
-      "sha256": "a85fd452c8f2996f7ad6484077dd5414b1346e9cc35bad7984b23f26b4e12981"
+      "bytes": 1092,
+      "sha256": "226653e4bc04eae77a6b05f62518bfa982095f78d999e867c886784c054793ce"
     },
     {
       "path": "docs/发布维护流程.md",
@@ -143,13 +158,13 @@
     },
     {
       "path": "docs/地图制作规范.md",
-      "bytes": 2772,
-      "sha256": "21cb68487ad76146182da7fcf4c47e62a85c396f8bcbf23fea3b94910e62dfca"
+      "bytes": 3057,
+      "sha256": "bf582e9aaf0e2b9080ea7ee5726d2a2fd8a2e8a61d2d2703c725440e2f7e4ecf"
     },
     {
       "path": "docs/安装与还原.md",
       "bytes": 1413,
-      "sha256": "3ad3c15336b5c9509119617cb54af5c2fe615fd3aea1a5995e81d4ad348e7ab1"
+      "sha256": "043030e5b0b7ed9ff908a744b9e6b8a91e2ecde6b466dbd313ff481a66da7fc6"
     },
     {
       "path": "docs/工具说明.md",
@@ -158,23 +173,23 @@
     },
     {
       "path": "docs/开发入口.md",
-      "bytes": 1776,
-      "sha256": "64b477a054004621eda064c6396cf7cbd1459811082cb5659191d0a4376336ad"
+      "bytes": 2166,
+      "sha256": "7411ccdbf6b73b435e08b20c765f46c0577f05633cf6b330015933163f0704c4"
     },
     {
       "path": "docs/当前状态.json",
-      "bytes": 654,
-      "sha256": "f645cca2930a70d82f50d08a9d6f74e3cd2763034ef97c0e111afa5fd2700b2c"
+      "bytes": 1092,
+      "sha256": "641b56cc0e010457b81152a410f9bf5c98127500772140ca86d55889fcbe9d6f"
     },
     {
       "path": "docs/本轮工作记录.md",
-      "bytes": 1809,
-      "sha256": "7d7972af15fb2b7636c075313803f01c450865dc2def1e83029f0559634c1ec6"
+      "bytes": 3059,
+      "sha256": "945cbdf8be1fe5f85fffe18e3aad59aa051888896258df45a9b887ee3cb1c935"
     },
     {
       "path": "docs/构建与验证.md",
-      "bytes": 2757,
-      "sha256": "07ed799f6ad556a1741b192a271dbf6ec8c0c5e37abdc395ab66203e2ce5678b"
+      "bytes": 3794,
+      "sha256": "96dc50727c2d189195605912573c844dac3da7c226912cade0433f108eba0027"
     },
     {
       "path": "docs/炼蛊与战后机制.md",
@@ -183,13 +198,13 @@
     },
     {
       "path": "docs/玩家常见问题.md",
-      "bytes": 3888,
-      "sha256": "52c757e16f8473876e4dd2d71cb7baad744cafc19947b07e354b53ebb3dbb6f8"
+      "bytes": 4283,
+      "sha256": "928c64550042cc7a9a266222ec41db23a26a2585c4f2710c05224a8d584358e4"
     },
     {
       "path": "docs/知识与模块索引.md",
-      "bytes": 3543,
-      "sha256": "b2e7eec5e16806f9b806dd53ca0d4cf6c8d495db89dffb67c27fd343e5646c1f"
+      "bytes": 3975,
+      "sha256": "e17a2327dce7f225cfeeeb11f36a1104bdf34fdb2c96baf7da9537e1f30599d2"
     },
     {
       "path": "docs/社区发布文案.md",
@@ -208,8 +223,8 @@
     },
     {
       "path": "patch/latest.json.gz",
-      "bytes": 306198,
-      "sha256": "d76d7783a68a48264b428d16606d880e906708f9ab09f5f1b288456212c8f72b"
+      "bytes": 393264,
+      "sha256": "5e81f7d6bad74a7884a85c8a9243bf659853450793a66decaf684e5e0659e82e"
     },
     {
       "path": "patch/v0.3.0-baseline.json.gz",
@@ -217,9 +232,14 @@
       "sha256": "1c32914f48cb049e60a3e016946ae3b5c76d36eb26d6d7e342474d7a48535920"
     },
     {
+      "path": "patch/v0.3.1-baseline.json.gz",
+      "bytes": 306198,
+      "sha256": "d76d7783a68a48264b428d16606d880e906708f9ab09f5f1b288456212c8f72b"
+    },
+    {
       "path": "README.md",
-      "bytes": 9998,
-      "sha256": "1ede3f9be80964cd3151bf1439e021acb3ccf72c74e6aea9193d769920d330a7"
+      "bytes": 10672,
+      "sha256": "fd337adc099750c6a4d0369763913a2cf446ba7d9643b17eaf98936fc1ce6eee"
     },
     {
       "path": "requirements-map.txt",
@@ -623,8 +643,8 @@
     },
     {
       "path": "Resource/np_lr_road_503_v1.png",
-      "bytes": 386242,
-      "sha256": "5e7c39574069ef36f2d0e5a51f69b1926ae71b45794a23ca7d127531f9fa293b"
+      "bytes": 150701,
+      "sha256": "694dadd90e3f19b9d5a63d9354b315a404272f0714fca72f01cba2217b2353b7"
     },
     {
       "path": "Resource/np_lr_road_504_v1.png",
@@ -638,13 +658,13 @@
     },
     {
       "path": "Resource/np_lr_road_506_v1.png",
-      "bytes": 346934,
-      "sha256": "ade77087df4d1374d9f09c15d4d5cded8af3a496f175c68e2ad3c1e62924e217"
+      "bytes": 114811,
+      "sha256": "c3783b727e1e780ea07433fd9b9abc06af8227ff0472e5564f7a998c3c6dc42b"
     },
     {
       "path": "Resource/np_lr_road_507_v1.png",
-      "bytes": 317578,
-      "sha256": "f6e3a317a4a368fb8a3a0b24d4882643d30abe951184dd5863b9c0fe6d51cb95"
+      "bytes": 37356,
+      "sha256": "75682d72d188546dfc11cbd67ca1d189aae90e5c24f72ee5fbc1079347810267"
     },
     {
       "path": "Resource/np_lr_road_508_v1.png",
@@ -653,18 +673,18 @@
     },
     {
       "path": "Resource/np_lr_road_509_v1.png",
-      "bytes": 323471,
-      "sha256": "1aace319b498682d60a985e8664d944c2729788cb7fbcc7d28459c04a081560a"
+      "bytes": 44801,
+      "sha256": "f016e5bfc1dbea9001b3145fe0ec7306063772d4752ebafe238abd4e0f0feb17"
     },
     {
       "path": "Resource/np_lr_road_510_v1.png",
-      "bytes": 310131,
-      "sha256": "f2d5195a8963445273b421310ae209d72879bc1b206ea5bd9cba15091d77c6cf"
+      "bytes": 29355,
+      "sha256": "d18c92945ba4eed503872404df2012e2e01bba00d4056cf63f8a05d60c8e726e"
     },
     {
       "path": "Resource/np_lr_road_511_v1.png",
-      "bytes": 368458,
-      "sha256": "30437def2e5f1abb36e12abeb5c41985cdffa00ea196b1d4c61b10cb1c75a4a9"
+      "bytes": 132412,
+      "sha256": "50d7d65b675a4b0c10b46df202c6206e378a96f8bbfde58fc1889d6bb1ebf65a"
     },
     {
       "path": "Resource/np_lr_road_512_v1.png",
@@ -673,8 +693,8 @@
     },
     {
       "path": "Resource/np_lr_road_513_v1.png",
-      "bytes": 314151,
-      "sha256": "d7a3dfdb59328ffa1a523d247ee847e97f12db34eda64cf2ed1b65dd5ec5a601"
+      "bytes": 55115,
+      "sha256": "6f8dabbe1461c74e89e9eec8a4d4d2efd6010b3c2a54fcf2affe39896a90bf8a"
     },
     {
       "path": "Resource/np_lr_road_514_v1.png",
@@ -693,8 +713,8 @@
     },
     {
       "path": "Resource/np_lr_road_517_v1.png",
-      "bytes": 323636,
-      "sha256": "3e6d443e7b5b9ea640493e422811dcc9d57450c2e78b3b86955f0e33db0e0f8d"
+      "bytes": 45175,
+      "sha256": "5df62852d836087271152c0953184fb04e77ba5c898419b130da5fc67cb2c2a9"
     },
     {
       "path": "Resource/np_lr_road_518_v1.png",
@@ -822,6 +842,36 @@
       "sha256": "a3ec7e77b348781fb69aa605cfd51c4c4be8fbcb693ef08509194162d2abd752"
     },
     {
+      "path": "Resource/np_sp_base_17_v1.png",
+      "bytes": 518214,
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58"
+    },
+    {
+      "path": "Resource/np_sp_base_18_v1.png",
+      "bytes": 518214,
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58"
+    },
+    {
+      "path": "Resource/np_sp_base_817_v1.png",
+      "bytes": 518214,
+      "sha256": "e48877429f6b288da6ef84319b59103fefa4a6f0eb0b89e6ae5fcc6c40235d58"
+    },
+    {
+      "path": "Resource/np_sp_road_17_v1.png",
+      "bytes": 479201,
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0"
+    },
+    {
+      "path": "Resource/np_sp_road_18_v1.png",
+      "bytes": 479201,
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0"
+    },
+    {
+      "path": "Resource/np_sp_road_817_v1.png",
+      "bytes": 479201,
+      "sha256": "b148361cf87fdcc9570de471d892226c5b729570e2b546a6078134eaead8bfd0"
+    },
+    {
       "path": "third_party/Expat-COPYING",
       "bytes": 1144,
       "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534"
@@ -902,9 +952,14 @@
       "sha256": "85d83124dd9a903a00a87347b93a346c5f4f074664179adba734f43a6eaa08c2"
     },
     {
+      "path": "tools/build_release_additions_v032.py",
+      "bytes": 3732,
+      "sha256": "26d79f347f1b0c917736710f92a1f3435ebc78f84e07bd4f2e125f4bbc0c7268"
+    },
+    {
       "path": "tools/build_updated_from_source.py",
-      "bytes": 3652,
-      "sha256": "ab39de416662c87d616509045510857a055bae04a555011e86ed0fc3cfa3184e"
+      "bytes": 3792,
+      "sha256": "3f2208cb88bb9d7f37ef38ece5830c42a98a2855d6774eb9057bba829da73f4b"
     },
     {
       "path": "tools/check_repository.py",
@@ -1212,6 +1267,11 @@
       "sha256": "1814f4b7e506136cb80d5580e6063638c1be23444509f40f8454363aa4e91992"
     },
     {
+      "path": "补丁工作仓库/候选版本/shilipo-map-v1/atlas.json",
+      "bytes": 1091,
+      "sha256": "9b150e8f81c035c4827efc3e22847c72bcdf9c5e8fc6168649618843b4cf94c8"
+    },
+    {
       "path": "补丁工作仓库/候选版本/story-motion-v2/candidate.json",
       "bytes": 1124,
       "sha256": "1956e4bf059b6591cb19e24f14c6648cd16ac18b480fb579e49d37eac6b272b3"
@@ -1335,6 +1395,16 @@
       "path": "补丁工作仓库/脚本/edge_walk_v1.py",
       "bytes": 9348,
       "sha256": "a1fbd20186371e4898826c0baa32722f538f877d3af66b27b787ef8d7cf9e5fa"
+    },
+    {
+      "path": "补丁工作仓库/脚本/encounter_manual_reentry_v1.py",
+      "bytes": 10454,
+      "sha256": "4464b5c91682e18b92ab2ea032a86789a0801b1180ca8551b0fab8feff8b402b"
+    },
+    {
+      "path": "补丁工作仓库/脚本/encounter_object_split_v1.py",
+      "bytes": 9542,
+      "sha256": "5f7637a5595c1b01d6ccbaf6f836a1b38f227652656a7e52392f57d6038b70d4"
     },
     {
       "path": "补丁工作仓库/脚本/export_native_flag_groups_v1.py",
@@ -1555,6 +1625,16 @@
       "path": "补丁工作仓库/脚本/settings_toggle_v1.py",
       "bytes": 12468,
       "sha256": "d998721714c09fefada6322c02e3afa650a187d1576901d4884a82a594783345"
+    },
+    {
+      "path": "补丁工作仓库/脚本/settle_message_skip_v5.py",
+      "bytes": 6214,
+      "sha256": "9da947c3c187cbf58a804aed694dc4c90d168af08d2a64e0c7c94caad13bead6"
+    },
+    {
+      "path": "补丁工作仓库/脚本/shilipo_runtime_v1.py",
+      "bytes": 10443,
+      "sha256": "ca05b452203ba684d9489a3e3ca942e7fdee4037e27cc757e393dd504288e6d3"
     },
     {
       "path": "补丁工作仓库/脚本/simple_batch_v1.py",

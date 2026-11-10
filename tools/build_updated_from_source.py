@@ -1,4 +1,4 @@
-"""Rebuild the three v0.3.1 additions on the frozen v0.3.0 base, never install.
+"""Rebuild v0.3.1 and v0.3.2 additions on the frozen v0.3.0 base, never install.
 
 Earlier features still use a frozen delta; this is not an all-feature source build.
 Requires the exact supported Steam original and MSVC x86 build tools.
@@ -61,6 +61,8 @@ def main():
         gu.OUT = Path(temp)
         gu.TOOLS = args.msvc_tools.resolve()
         data, gu_plan = gu.candidate(data)
+    import build_release_additions_v032 as additions
+    data, new_stages = additions.apply(data, root)
     assert digest(data) == manifest['target_sha256'], 'Source build differs from frozen release'
     for row in manifest['resources']:
         assert digest((root / row['path']).read_bytes()) == row['sha256']
@@ -72,7 +74,7 @@ def main():
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(root / row['path'], dest)
     print(json.dumps({'sha256': digest(data), 'runtime_pngs': len(manifest['resources']),
-                      'source_stages': ['native-recovery-v2', 'postbattle-popup-skip-v1', 'gu-batch-v6'],
+                      'source_stages': ['native-recovery-v2', 'postbattle-popup-skip-v1', 'gu-batch-v6'] + [x['stage'] for x in new_stages],
                       'earlier_features': 'frozen v0.3.0 delta', 'installed': False}))
 
 

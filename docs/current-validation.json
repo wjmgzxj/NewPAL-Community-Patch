@@ -1,9 +1,42 @@
 {
-  "version": "v0.3.0-preview",
-  "original_to_current_reconstruction": "exact EXE and all 111 PNGs",
-  "cave_and_lotus_source_code_regeneration": "passed",
-  "repository_integrity": "passed",
+  "version": "v0.3.2-preview",
+  "target_sha256": "4067f280219357317ae2806163930f922303314cbf8e1543aa7e757f179c5d2e",
+  "source_additions": {
+    "status": "source additions rebuilt exactly; not installed",
+    "target_sha256": "4067f280219357317ae2806163930f922303314cbf8e1543aa7e757f179c5d2e",
+    "stages": [
+      {
+        "stage": "shilipo-map-v1",
+        "sha256": "5694641891f75dfdd0e04f24f0e181c6cf6229a33b412ba605b41a9050d7ef15"
+      },
+      {
+        "stage": "encounter-object-split-v1",
+        "sha256": "c8bc09e57e15a6cfb5cc2fba897feee10ba1d87ef14cda61313a65f33b43908a"
+      },
+      {
+        "stage": "encounter-manual-reentry-v1",
+        "sha256": "3421c9a01d05544042b01c3dbeeb04266884d286e3c2153f82591ed2714c23a0"
+      },
+      {
+        "stage": "settle-message-skip-v5",
+        "sha256": "4067f280219357317ae2806163930f922303314cbf8e1543aa7e757f179c5d2e"
+      }
+    ],
+    "runtime_pngs": 125
+  },
+  "frozen_reconstruction": "Executed from supported original; exact EXE and all 125 PNGs match source additions and installed baseline",
+  "reused_checks": "Unchanged v0.3.1 native recovery/popup precursor/Gu build and regression evidence; full combined source entry not rerun",
+  "gameplay_user_feedback_20261111": [
+    "十里坡落地",
+    "保护期手动遇敌/开宝箱可用",
+    "战后经验/道具/升级/属性等消息可跳过"
+  ],
   "not_full_source_rebuild": true,
-  "gameplay": "previous accepted functionality retained; newest nameplate logic final gameplay feedback pending",
+  "pending": [
+    "all hardware/story coverage",
+    "independent native recovery/nameplate gameplay acceptance",
+    "current game chain map tester compatibility",
+    "cursor double/occlusion issues"
+  ],
   "checks_document": "发布检查.md"
 }
