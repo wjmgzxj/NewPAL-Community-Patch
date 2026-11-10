@@ -2,6 +2,26 @@
   "version": "v0.3.1-preview",
   "files": [
     {
+      "path": ".agents/skills/newpal-release/agents/openai.yaml",
+      "bytes": 238,
+      "sha256": "6786be467388d80e025fcc7218122d096edfaefabfa93ab6507af29aafd7d38c"
+    },
+    {
+      "path": ".agents/skills/newpal-release/references/project.md",
+      "bytes": 2520,
+      "sha256": "7f1bdd327b0e458029ee886bd4d79b8a6ba547b07fefa69cb5b444bc018ed857"
+    },
+    {
+      "path": ".agents/skills/newpal-release/scripts/release_once.py",
+      "bytes": 6414,
+      "sha256": "40ac7b8e83ae1e5e93214469b4e71b3243105c2289187357763199404ec56d15"
+    },
+    {
+      "path": ".agents/skills/newpal-release/SKILL.md",
+      "bytes": 3753,
+      "sha256": "4751831c30c3ff7d61b5ff5897572a09f78ed4770398709231218292785a93e9"
+    },
+    {
       "path": ".github/ISSUE_TEMPLATE/问题反馈.md",
       "bytes": 453,
       "sha256": "8a01ece99798b6c3de04f39bf21df997b367b19f566791c779f02f91b239b2ed"
@@ -92,9 +112,19 @@
       "sha256": "cad4aa2402e2858a3be937670a05c4d68dc38f369c86e3df606d1f92f5ad64ca"
     },
     {
+      "path": "docs/map-tool-validation.json",
+      "bytes": 1029,
+      "sha256": "213735e66e18abbe0d0f1c730f537cf56e3a41c96b1ccb9d78e783e19c9b76fc"
+    },
+    {
       "path": "docs/source-modules.json",
       "bytes": 28833,
       "sha256": "18729abe9726e8b1035fbf164d8ce040ae9e513c05821de628ee8bd99c1ee7f7"
+    },
+    {
+      "path": "docs/传送器接口兼容.md",
+      "bytes": 2940,
+      "sha256": "c87654d455829540037f7673d56a046f4de72dac0bea8629d8584c83f25e2fa7"
     },
     {
       "path": "docs/功能与状态.md",
@@ -108,8 +138,8 @@
     },
     {
       "path": "docs/发布维护流程.md",
-      "bytes": 1765,
-      "sha256": "4ddd87cbd5d4814f148f28c2cf3204fcb933853a0427e275481e6c34416d0fc2"
+      "bytes": 1714,
+      "sha256": "a3c03959346436b29e2ef59a207ea119dbe8092ec747e905c59cc2b13e8a0123"
     },
     {
       "path": "docs/地图制作规范.md",
@@ -123,8 +153,8 @@
     },
     {
       "path": "docs/工具说明.md",
-      "bytes": 2455,
-      "sha256": "4594f8ed3b665092db5e20e42a32f9aa0d85e49e06678316f869796cf3ed7655"
+      "bytes": 2908,
+      "sha256": "2bb3bacc38e856b8ddeeda0d8b94091d255263e5d0cf60ac1d28c8a5b20c020d"
     },
     {
       "path": "docs/开发入口.md",
@@ -133,13 +163,13 @@
     },
     {
       "path": "docs/当前状态.json",
-      "bytes": 540,
-      "sha256": "8c4a869ed58824c64a53be77c94bea71e758388fc2a5d48c360e7049bf678070"
+      "bytes": 654,
+      "sha256": "f645cca2930a70d82f50d08a9d6f74e3cd2763034ef97c0e111afa5fd2700b2c"
     },
     {
       "path": "docs/本轮工作记录.md",
-      "bytes": 944,
-      "sha256": "c8cc11c8fa84e565ae9f4c27d2855aa1ce89981655a4e70c9afce385b449ed3c"
+      "bytes": 1809,
+      "sha256": "7d7972af15fb2b7636c075313803f01c450865dc2def1e83029f0559634c1ec6"
     },
     {
       "path": "docs/构建与验证.md",
@@ -188,8 +218,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9655,
-      "sha256": "8bc94fcf4e0185e995da32c4e9fdd076ddbd5980cb5efb72aa3239345b099d55"
+      "bytes": 9998,
+      "sha256": "1ede3f9be80964cd3151bf1439e021acb3ccf72c74e6aea9193d769920d330a7"
     },
     {
       "path": "requirements-map.txt",
@@ -853,13 +883,23 @@
     },
     {
       "path": "tool-baseline.json",
-      "bytes": 293,
-      "sha256": "3fbd00d32ce25e4a30655c374c4313cfe116eae9a7b89e89dbbf21e116ee1091"
+      "bytes": 583,
+      "sha256": "2c9e7006e2f8c6dd78e9e5b24bca276100eb6d322453284caae8babee54f1589"
+    },
+    {
+      "path": "tool-data/传送接口兼容规则.json",
+      "bytes": 2315799,
+      "sha256": "7a191942e4ccfaf562910a88b4d79d967239fa1bafbe6744a1d4d3b2266fa7f0"
     },
     {
       "path": "tools/build_current.py",
       "bytes": 2367,
       "sha256": "89393b80924583439dfd4fadb68430fdcd604fa3c07a8fb1089bea8ed1873e14"
+    },
+    {
+      "path": "tools/build_map_tester.py",
+      "bytes": 3020,
+      "sha256": "85d83124dd9a903a00a87347b93a346c5f4f074664179adba734f43a6eaa08c2"
     },
     {
       "path": "tools/build_updated_from_source.py",
@@ -890,6 +930,11 @@
       "path": "tools/verify_map_source.py",
       "bytes": 2234,
       "sha256": "d592928283d4e8ee8f76a90117278cfda03a74a95526bc147c9eab88697364fc"
+    },
+    {
+      "path": "tools/verify_map_tool_interfaces.py",
+      "bytes": 1729,
+      "sha256": "4314bbdcf9cf8185ef079556bd6b7135b742335026f3b7202b65fcc1f9de2cc8"
     },
     {
       "path": "补丁工作仓库/候选版本/dream-map-isolation-v1/candidate.json",
@@ -1417,14 +1462,19 @@
       "sha256": "46e8561e9a662d66a8ae81898e7408b0781113e223e9f6f93b9b251a2a7c92bb"
     },
     {
+      "path": "补丁工作仓库/脚本/map_test_compat_v2.py",
+      "bytes": 3627,
+      "sha256": "7fee0343a9831be00f07f45f7223a99ef143bea73d4538043761178817148e76"
+    },
+    {
       "path": "补丁工作仓库/脚本/map_test_exe_entry_v1.py",
       "bytes": 831,
       "sha256": "31a8a0b581b9df7e325ed4c285c6581dc31e3c457a81182344ecbc84dca1050b"
     },
     {
       "path": "补丁工作仓库/脚本/map_test_tool_v1.py",
-      "bytes": 21172,
-      "sha256": "753db4923e511f7ec36534cb947e6840ee5b3e4512c3c98aeffdcf2d87fda8d6"
+      "bytes": 19919,
+      "sha256": "b91795f2d203a41b042e9895c2853d21409513ab04c19e9fb7996266686a536b"
     },
     {
       "path": "补丁工作仓库/脚本/monster_motion_v1.py",

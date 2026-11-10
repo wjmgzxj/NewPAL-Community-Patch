@@ -1,7 +1,11 @@
 {
   "name": "新仙剑地图传送器.exe",
-  "sha256": "88e628d76b99e96470759aa06e05699d32512cd5b0d2af7e2bd4fadfc9a4297d",
-  "bytes": 179693295,
+  "sha256": "f3bcb64f2924dd43cdf8edf42e4cde4c3b1d4fe77c70af1d8f9e0227b98f9ff5",
+  "bytes": 180067950,
   "native_map_previews": 475,
-  "scope": "independent test tool; original and explicitly verified modified games; not game content license"
+  "scope": "independent test tool; original and explicitly verified modified games; not game content license",
+  "version": "map-tester-v0.3.1-preview",
+  "whole_exe_hash_allowlist": false,
+  "compatibility": "audited interface bytes and runtime checks; arbitrary third-party versions not guaranteed",
+  "validation": "offline and hidden standalone passed; new real process connection pending"
 }

@@ -38,22 +38,8 @@ def game_root():
 BLOCK=0x60800000
 RESULTS={1:'瞬移完成',2:'当前处于战斗/剧情/菜单/切图，未执行',3:'地图未收录',4:'坐标越界',5:'测试已停止或连接已过期',6:'原生加载未返回目标地图',10:'正在加载'}
 
-def compatible_bridge_hashes(report):
- """Allow the original bridge and explicitly verified, byte-identical descendants."""
- hashes={report['candidate_sha1']}
- folder=WORK/'候选版本/dream-map-isolation-v1';cp=folder/'candidate.json';vp=folder/'verification.json'
- if cp.exists() and vp.exists():
-  c=json.loads(cp.read_text(encoding='utf-8'));v=json.loads(vp.read_text(encoding='utf-8'))
-  if c.get('baseline_sha1')==report['candidate_sha1'] and v.get('baseline_sha1')==report['candidate_sha1'] and v.get('status')=='passed; gameplay acceptance pending' and v.get('map_test_bridge_unchanged') is True and c.get('candidate_sha1')==v.get('candidate_sha1'):
-   hashes.add(c['candidate_sha1'])
- # Only a verified descendant retaining the original mailbox code is admitted.
- for name in ['luocha-return-v1','lotus-map-v1','story-motion-v2','story-motion-v3','lotus-map-v2','map-art-runtime-v6','map-nameplates-v1']:
-  folder=WORK/'候选版本'/name;cp=folder/'candidate.json';vp=folder/'verification.json'
-  if cp.exists() and vp.exists():
-   c=json.loads(cp.read_text(encoding='utf-8'));v=json.loads(vp.read_text(encoding='utf-8'))
-   if c.get('baseline_sha1') in hashes and v.get('baseline_sha1')==c.get('baseline_sha1') and v.get('status') in ('passed; gameplay acceptance pending','passed; user gameplay verification pending') and v.get('map_test_bridge_unchanged') is True and c.get('candidate_sha1')==v.get('candidate_sha1'):
-    hashes.add(c['candidate_sha1'])
- return hashes
+def compatibility_rules():
+ return json.loads((DATA/'传送接口兼容规则.json').read_text(encoding='utf-8'))
 
 class Catalog:
  def __init__(self):
@@ -98,13 +84,11 @@ class Game:
   if len(ids)!=1:raise RuntimeError('请先从Steam启动受支持的原版或补丁版游戏，读档进入可走动地图；仅保留一个游戏进程')
   self.pid=ids[0];self.base=None;self.handle=None
   self.runtime_address=None
-  report=json.loads((BRIDGE/'candidate.json').read_text(encoding='utf-8-sig'));self.state=report['state']
-  digest=hashlib.sha1((ROOT/'NewPAL_Release.exe').read_bytes()).hexdigest()
-  profiles_path=DATA/'支持版本.json'
-  profiles=json.loads(profiles_path.read_text(encoding='utf-8')) if profiles_path.exists() else {}
-  profile=profiles.get(digest)
-  integrated=digest in compatible_bridge_hashes(report)
-  if not integrated and not profile:raise RuntimeError('此游戏版本尚未核对，拒绝连接。支持本工具说明中列出的精确原版和补丁版')
+  from map_test_compat_v2 import select_contract,validate_runtime
+  contract=select_contract((ROOT/'NewPAL_Release.exe').read_bytes(),compatibility_rules())
+  integrated=contract['kind']=='integrated';profile=contract.get('profile')
+  self.state=contract.get('state',{})
+  self.compatibility=contract['label']
   snap=k.CreateToolhelp32Snapshot(0x18,self.pid)
   if snap in (None,ctypes.c_void_p(-1).value):raise ctypes.WinError(ctypes.get_last_error())
   try:
@@ -119,6 +103,7 @@ class Game:
   self.handle=k.OpenProcess(0x1038,False,self.pid)
   if not self.handle:raise ctypes.WinError(ctypes.get_last_error())
   try:
+   validate_runtime(lambda rva,n:self.read(0x400000+rva,n),self.base,contract)
    if not integrated:
     from portable_map_bridge_v1 import attach
     self.runtime_address,self.state=attach(self,profile,(DATA/'运行桥地图尺寸.bin').read_bytes())
@@ -262,7 +247,7 @@ class App:
  def close(self):self.stop();self.root.destroy()
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--list',action='store_true');ap.add_argument('--status',action='store_true');ap.add_argument('--send',nargs=3,type=int,metavar=('SCENE','X','Y'));ap.add_argument('--self-check',action='store_true');ap.add_argument('--report',type=Path);args=ap.parse_args();catalog=Catalog()
+ ap=argparse.ArgumentParser();ap.add_argument('--list',action='store_true');ap.add_argument('--status',action='store_true');ap.add_argument('--send',nargs=3,type=int,metavar=('SCENE','X','Y'));ap.add_argument('--self-check',action='store_true');ap.add_argument('--check-exe',type=Path);ap.add_argument('--report',type=Path);args=ap.parse_args();catalog=Catalog()
  if args.list:
   print(json.dumps(catalog.data,ensure_ascii=True));return
  if args.status or args.send:
@@ -283,7 +268,11 @@ def main():
     if row['image'] and row['image'] not in previews:
      photo=tk.PhotoImage(file=str(WORK/row['image']));assert photo.width()>0 and photo.height()>0;previews.add(row['image'])
    app.list.selection_set(0);app.select();root.update_idletasks();assert app.photo is not None
-   report=dict(status='passed; no game connection or memory writes',frozen=FROZEN,scenes=len(catalog.rows),grids=len(catalog.cache),previews=len(previews),compatible_game_sha1=sorted(compatible_bridge_hashes(json.loads((BRIDGE/'candidate.json').read_text(encoding='utf-8-sig')))))
+   report=dict(status='passed; no game connection or memory writes',frozen=FROZEN,scenes=len(catalog.rows),grids=len(catalog.cache),previews=len(previews),compatibility_policy='interface regions; no whole-EXE hash allowlist',interface_contracts=[c['label'] for c in compatibility_rules()['contracts']])
+   if args.check_exe:
+    from map_test_compat_v2 import select_contract
+    selected=select_contract(args.check_exe.read_bytes(),compatibility_rules())
+    report['selected_interface']=selected['label'];report['whole_exe_hash_allowlist']=False
    if args.report:args.report.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
    if sys.stdout:print(json.dumps(report,ensure_ascii=True))
   finally:root.destroy()

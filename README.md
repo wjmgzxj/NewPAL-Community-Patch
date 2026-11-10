@@ -72,7 +72,7 @@
 
 *地图传送器实际运行界面；功能说明见 [工具说明](docs/工具说明.md)。*
 
-可选工具和后续美术附件仍在 [v0.3.0 下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.0-preview)。旧传送器只支持其已登记基线，尚未适配本次 v0.3.1 EXE；不要强行绕过识别。
+新版可选传送器见 [地图工具下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/map-tester-v0.3.1-preview)：取消整体EXE哈希白名单，改为核对实际传送接口，当前 v0.3.1 已通过离线识别及独立启动检查，新识别版实际连接待反馈。后续美术附件仍在 [v0.3.0 下载页](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/tag/v0.3.0-preview)。
 
 ## 安装与下载文件说明
 
@@ -84,7 +84,7 @@
 | 下载文件 | 适合谁 | 是否必需 |
 | --- | --- | --- |
 | **NewPAL_Patch_v0.3.1-preview.zip** | **普通玩家** | **必需，只下载它即可** |
-| NewPAL_MapTester_v0.3.0-preview.zip | 地图测试人员 | 可选 |
+| [NewPAL_MapTester_v0.3.1-preview.zip](https://github.com/lihang801290-design/NewPAL-Community-Patch/releases/download/map-tester-v0.3.1-preview/NewPAL_MapTester_v0.3.1-preview.zip) | 地图测试人员 | 可选 |
 | NewPAL_MapArtSources_v0.3.0-preview.zip | 地图美术／开发协作者 | 可选，非已完成地图包 |
 | SHA256SUMS.txt | 需要校验下载内容的用户 | 可选 |
 

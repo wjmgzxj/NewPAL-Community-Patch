@@ -1,0 +1,4 @@
+interface:
+  display_name: "新仙剑打包与发布"
+  short_description: "整合分享包与GitHub发布，复用未变化的检查结果，减少重复工作"
+  default_prompt: "使用 $newpal-release 处理本轮新仙剑分享包或GitHub发布，只检查变化并复用已有包和证据。"

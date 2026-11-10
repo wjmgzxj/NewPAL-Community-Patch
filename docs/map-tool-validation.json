@@ -1,0 +1,19 @@
+{
+  "status": "passed; standalone and real connection checks separate",
+  "whole_exe_hash_allowlist": false,
+  "supported_reference_interfaces": 4,
+  "corruption_cases": 48,
+  "runtime_fixture_cases": 5,
+  "checks": [
+    "Steam original: compatible interface selected without EXE digest",
+    "published v5: compatible interface selected without EXE digest",
+    "published v0.3.0: compatible interface selected without EXE digest",
+    "published v0.3.1: compatible interface selected without EXE digest",
+    "unregistered GUI-byte and file-size changes accepted when ABI unchanged",
+    "all critical loader/frame/save/gate/bridge/table region corruptions refused",
+    "wrong CPU/base and truncated PE refused",
+    "runtime byte mismatch refused; portable relocation supported; integrated relocation refused",
+    "structural selection before process open and runtime checks before attach"
+  ],
+  "limits": "Disk/reference and fake-memory reads only; no game opened, suspended, patched or teleported."
+}

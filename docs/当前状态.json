@@ -6,5 +6,6 @@
   "postbattle_popup_skip": "离线通过，独立实机反馈待补",
   "native_recovery": "离线通过，独立实机反馈待补",
   "maps": "继承0.3.0范围，无新地图；片区标题最终实机反馈仍待补",
-  "tool": "旧传送器未登记0.3.1身份，见工具说明"
+  "tool": "map-tester-v0.3.1-preview；接口识别；离线和独立启动通过，新识别版实际连接待反馈",
+  "tool_release": "map-tester-v0.3.1-preview"
 }
